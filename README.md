@@ -1,6 +1,6 @@
-# Jurisdiction profiles for the 3D CSDM (Cadastral Survey Data Model)
+# Victoria profile for the 3D CSDM (Cadastral Survey Data Model)
 
-This repository defines profiles of the 3D CSDM (Cadastral Survey Data Model) for each jurisdiction participating in the first phase of development and testing.  
+This repository defines the profile of the 3D CSDM (Cadastral Survey Data Model) for Victoria.
 
 _Note that this is a model for **exchange** of survey data for plan submission, not a data storage specification or a cadastral data product. **[Please see the Reviewers Guide](REVIEW_GUIDE.md) for more details about scope.**_
 
