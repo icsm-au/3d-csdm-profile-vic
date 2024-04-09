@@ -1,0 +1,59 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix vocabs: <https://linked.data.gov.au/def/csdm/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vocabs:vic-county rdfs:label "VIC Counties" .
+
+vocabs:vic-crs rdfs:label "VIC Coordinate Reference Systems" .
+
+vocabs:vic-local-government-area rdfs:label "VIC Local Government Areas" .
+
+vocabs:vic-locality rdfs:label "VIC Localities" .
+
+vocabs:vic-monument-condition rdfs:label "VIC Monument Condition" .
+
+vocabs:vic-monument-form rdfs:label "VIC Monument Form" .
+
+vocabs:vic-monument-state rdfs:label "VIC Monument State" .
+
+vocabs:vic-parcel-purpose rdfs:label "VIC Parcel Purpose" .
+
+vocabs:vic-parcel-state rdfs:label "Vic Parcel States" .
+
+vocabs:vic-parcel-type rdfs:label "VIC Parcel Type" .
+
+vocabs:vic-parish rdfs:label "VIC Parishes" .
+
+vocabs:vic-procedure-used rdfs:label "VIC Survey Procedures" .
+
+vocabs:vic-secondary-parcel-purpose rdfs:label "VIC Secondary Parcel Purpose" .
+
+vocabs:vic-secondary-parcel-type rdfs:label "VIC Secondary Parcel Type" .
+
+vocabs:vic-survey-purpose rdfs:label "VIC Survey Purpose" .
+
+vocabs:vic-survey-type rdfs:label "VIC Survey Type" .
+
+vocabs:vic-surveypoint-purpose rdfs:label "VIC Survey Point Purpose" .
+
+vocabs:vic-township rdfs:label "VIC Townships" .
+
+vocabs:vic-vhd rdfs:label "VIC Vertical Height Datums" .
+
+[] a prov:Activity ;
+    prov:endedAtTime "2024-02-04T06:23:49.630419"^^xsd:dateTime ;
+    prov:startedAtTime "2024-02-04T06:23:49.613364"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:0f32332d11a6cc8231abe9ed2a14e854258b41a0" ;
+            rdfs:seeAlso <file:///home/runner/work/3d-csdm-profiles/3d-csdm-profiles/profiles/vic-vocab-labels.csv> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dct:hasVersion "0.3.35" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dct:identifier "d6d0e2d7-4f80-4e92-8329-efda53896ae2" ] .
+

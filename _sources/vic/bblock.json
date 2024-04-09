@@ -1,0 +1,62 @@
+{
+  "name": "Victoria Cadastral Survey Data Exchange Profile",
+  "highlighted": true,
+  "abstract": "Implementation Profile of the ICSM Cadastral Survey Data Exchange Model for use in Victoria",
+  "status": "under-development",
+  "dateTimeAddition": "2023-07-31T00:00:00Z",
+  "itemClass": "schema",
+  "register": "icsm-csdm",
+  "version": "0.1",
+  "dateOfLastChange": "2023-08-08",
+  "sources": [
+    {
+      "title": "3D Cadastre Survey Data Model",
+      "link": "https://icsm-au.github.io/3d-csdm-design/2022/spec.html"
+    }
+  ],
+  "link": "https://github.com/icsm-au/3d-csdm-schema",
+  "maturity": "development",
+  "scope": "profiles",
+  "tags": [
+    "vic",
+    "sosa",
+    "ssn",
+    "o&m",
+    "o&m&s",
+    "csdm",
+    "profile"
+  ],
+  "superBBlock": false,
+  "shaclRules": [
+    "vic-pointnames-shacl.ttl",
+    "vic-vocabs-shacl.ttl"
+  ],
+  "shaclClosures": [
+    "../../vocabularies/CSD-Header/icsm-admin-unit-type.ttl",
+    "../../vocabularies/SurveyObservations/icsm-angle-type.ttl",
+    "../../vocabularies/SurveyObservations/icsm-distance-type.ttl",
+    "../../vocabularies/SurveyObservations/icsm-equipment-type.ttl",
+    "../../vocabularies/SurveyObservations/icsm-procedure-used.ttl",
+    "../../vocabularies/CSD-Header/vic-crs.ttl",
+    "../../vocabularies/CSD-Header/vic-survey-purpose.ttl",
+    "../../vocabularies/CSD-Header/vic-local-government-area.ttl",
+    "../../vocabularies/CSD-Header/vic-locality.ttl",
+    "../../vocabularies/CSD-Header/vic-county.ttl",
+    "../../vocabularies/CSD-Header/vic-parish.ttl",
+    "../../vocabularies/CSD-Header/vic-township.ttl",
+    "../../vocabularies/CSD-Header/vic-survey-documentation-type.ttl",
+    "../../vocabularies/CSD-Header/vic-annotation.ttl",
+    "../../vocabularies/CSD-Header/vic-survey-type.ttl",
+    "../../vocabularies/CSD-Header/vic-vhd.ttl",
+    "../../vocabularies/Parcels/vic-parcel-purpose.ttl",
+    "../../vocabularies/Parcels/vic-parcel-state.ttl",
+    "../../vocabularies/SurveyObservations/vic-procedure-used.ttl",
+    "../../vocabularies/SurveyObservations/vic-vector-purpose.ttl",
+    "../../vocabularies/SurveyObservations/vic-vector-quality.ttl",
+    "../../vocabularies/SurveyPoints/monument/vic-monument-type.ttl",
+    "../../vocabularies/SurveyPoints/condition/vic-condition.ttl",
+    "../../vocabularies/SurveyPoints/accuracy/vic-point-class.ttl",
+    "../../vocabularies/SurveyPoints/purpose/vic-purpose.ttl",
+    "../../vocabularies/SurveyPoints/state/vic-state.ttl"
+  ]
+}

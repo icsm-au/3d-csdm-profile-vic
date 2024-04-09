@@ -1,0 +1,97 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "policy": "http://www.opengis.net/def/metamodel/ogc-na/",
+    "surv": "https://linked.data.gov.au/def/csdm/surveyfeatures/",
+    "surveyobs": "https://linked.data.gov.au/def/csdm/surveyobs/",
+    "sosa": "http://www.w3.org/ns/sosa",
+    "container": "https://linked.data.gov.au/def/csdm/container/",
+    "termtype": "https://linked.data.gov.au/def/csdm/termtypes/",
+    "parcel": "https://linked.data.gov.au/def/csdm/parcels/",
+    "qb": "http://purl.org/linked-data/cube#",
+    "vocabs": "https://linked.data.gov.au/def/csdm/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "Scheme": "@id",
+    "Label": "rdfs:label"
+  },
+  "@graph": [
+    {
+      "Scheme": "vocabs:vic-crs",
+      "Label": "VIC Coordinate Reference Systems"
+    },
+    {
+      "Scheme": "vocabs:vic-locality",
+      "Label": "VIC Localities"
+    },
+    {
+      "Scheme": "vocabs:vic-parish",
+      "Label": "VIC Parishes"
+    },
+    {
+      "Scheme": "vocabs:vic-local-government-area",
+      "Label": "VIC Local Government Areas"
+    },
+    {
+      "Scheme": "vocabs:vic-county",
+      "Label": "VIC Counties"
+    },
+    {
+      "Scheme": "vocabs:vic-township",
+      "Label": "VIC Townships"
+    },
+    {
+      "Scheme": "vocabs:vic-vhd",
+      "Label": "VIC Vertical Height Datums"
+    },
+    {
+      "Scheme": "vocabs:vic-survey-purpose",
+      "Label": "VIC Survey Purpose"
+    },
+    {
+      "Scheme": "vocabs:vic-survey-type",
+      "Label": "VIC Survey Type"
+    },
+    {
+      "Scheme": "vocabs:vic-secondary-parcel-purpose",
+      "Label": "VIC Secondary Parcel Purpose"
+    },
+    {
+      "Scheme": "vocabs:vic-parcel-purpose",
+      "Label": "VIC Parcel Purpose"
+    },
+    {
+      "Scheme": "vocabs:vic-secondary-parcel-type",
+      "Label": "VIC Secondary Parcel Type"
+    },
+    {
+      "Scheme": "vocabs:vic-parcel-type",
+      "Label": "VIC Parcel Type"
+    },
+    {
+      "Scheme": "vocabs:vic-procedure-used",
+      "Label": "VIC Survey Procedures"
+    },
+    {
+      "Scheme": "vocabs:vic-monument-condition",
+      "Label": "VIC Monument Condition"
+    },
+    {
+      "Scheme": "vocabs:vic-monument-form",
+      "Label": "VIC Monument Form"
+    },
+    {
+      "Scheme": "vocabs:vic-surveypoint-purpose",
+      "Label": "VIC Survey Point Purpose"
+    },
+    {
+      "Scheme": "vocabs:vic-monument-state",
+      "Label": "VIC Monument State"
+    },
+    {
+      "Scheme": "vocabs:vic-parcel-state",
+      "Label": "Vic Parcel States"
+    }
+  ]
+}

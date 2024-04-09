@@ -1,0 +1,225 @@
+{
+  "desc": "Victoria-Examples",
+  "id": "DP_572532",
+  "name": "DP 572532" ,
+  "type": "FeatureCollection",
+  "featureType": "CSD",
+  "purpose": "vic-survey-purpose:22-subdivision",
+  "time": { "date": "2022-05-23" },
+  "horizontalCRS": "epsg:4167",
+  "bearingRotation": 0.0,
+  "surveyType": "vic-survey-type:survey",
+  "features": [],
+  "wasGeneratedBy": {
+    "provType": "Activity",
+    "id": "surveyreg-vic:DP_1-S2",
+    "endedAtTime": "2029-01-01T01:02:03Z",
+    "wasAssociatedWith": "registered-surveyors:bc-3",
+    "used": {
+      "type": "Entity",
+      "id": "Act3",
+      "wasAttributedTo": "icsm-jurisdictions:vic",
+      "link": {
+        "href": "https://some.gov/linktoact/",
+        "rel": "related"
+      }
+    }
+  },
+  "referencedCSDs": [
+    {
+      "id": "DP_119552", "name": "DP 119552" ,
+      "time": { "date": "2022-05-23" },
+      "bearingRotation": 0.001
+    }
+  ],
+  "points": [
+    {
+      "id": "points",
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "id": "1725787",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              174.7501603083,
+              -36.9307359096
+            ]
+          },
+          "properties": {
+            "name": {
+              "label": "RM E DP 119552",
+              "hasPart": [
+                {
+                  "type": "Source",
+                  "label": "DP 119552"
+                },
+                {
+                  "type": "Stamp",
+                  "label": "RM E"
+                }
+              ]
+            },
+            "purpose": "vic-surveypoint-purpose:boundary",
+            "fromSurvey": "DP_119552",
+            "comment": "ALP in channel of drive",
+            "occupation": {
+              "comment": "No occupation"
+            },
+            "monumentedBy": {
+              "form": "vic-monument-form:plaque",
+              "condition": "vic-monument-condition:markfound",
+              "state": "vic-monument-state:original"
+            }
+          }
+        },
+        {
+          "id": "44396823",
+          "type": "Feature",
+          "featureType": "CadastralMark",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              174.7508196767,
+              -36.9314093194
+            ]
+          },
+          "time": null,
+          "properties": {
+            "name": {
+              "label": "ALP I DP 481392",
+              "hasPart": [
+                {
+                  "type": "Source",
+                  "label": "DP 481392"
+                },
+                {
+                  "type": "Stamp",
+                  "label": "ALP I"
+                }
+              ]
+            },
+            "purpose": "vic-surveypoint-purpose:nonBoundary",
+            "occupation": {
+              "comment": "ALP in channel of drive"
+            },
+            "monumentedBy": {
+              "form": "vic-monument-form:pin",
+              "condition": "vic-monument-condition:markfound",
+              "state": "vic-monument-state:original"
+            }
+          }
+        },
+        {
+          "id": "11745104",
+          "type": "Feature",
+          "featureType": "GeodeticReferenceMark",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              174.7499979960,
+              -36.9309039370
+            ]
+          },
+          "time": null,
+          "properties": {
+            "geodeticid": "11745104",
+            "name": {
+              "label": "RM C DP 119552 (EQ9W)",
+              "hasPart": [
+                {
+                  "type": "PlanType",
+                  "label": "DP"
+                },
+                {
+                  "type": "Stamp",
+                  "label": "119552"
+                },
+                {
+                  "type": "MarkType",
+                  "label": "RM"
+                },
+                {
+                  "type": "Stamp",
+                  "label": "C"
+                },
+                {
+                  "type": "geodeticStamp",
+                  "label": "EQ9W"
+                }
+              ]
+            },
+            "occupation": {
+              "comment": "ALP in channel of drive"
+            },
+            "purpose": "vic-surveypoint-purpose:prm",
+            "monumentedBy": {
+              "form": "vic-monument-form:pin",
+              "condition": "vic-monument-condition:markfound",
+              "state": "vic-monument-state:original"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "observedVectors": [
+    {
+      "id": "ov",
+      "type": "FeatureCollection",
+      "featureType": "ObservedVector",
+      "features": [
+        {
+          "type": "Feature",
+          "id": "l973158",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1725787",
+              "11745104"
+            ]
+          },
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "vectorObservations": [
+    {
+      "id": "obs",
+      "type": "FeatureCollection",
+      "featureType": "sosa:ObservationCollection",
+      "time": null,
+      "resultTime": "2023-05-24",
+      "observedProperty": "surveyable:VectorDetermination",
+      "usedProcedure": "vic-procedure-used:traverse",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": null,
+          "time": null,
+          "place": null,
+          "properties": {
+            "hasFeatureOfInterest": "l973158",
+            "resultTime": "2023-05-22T16:41:00+2",
+            "hasResult": {
+              "pose": {
+                "position": null,
+                "angles": {
+                  "yaw": 231.38,
+                  "pitch": -0.001,
+                  "roll": 0
+                },
+                "distance": 333207.1
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

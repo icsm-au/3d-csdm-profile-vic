@@ -1,0 +1,18 @@
+Classes,Property,Range,Schemes
+container:CSD,container:horizontalCRS,termtype:AllowableCoordinateReferenceSystem,vocabs:vic-crs
+,container:adminUnit,termtype:AdminUnit,vocabs:vic-locality vocabs:vic-parish vocabs:vic-local-government-area vocabs:vic-county vocabs:vic-township
+container:CSD,container:verticalDatum,termtype:AllowableCoordinateReferenceSystem,vocabs:vic-vhd
+container:CSD,container:purpose,surv:SurveyPurpose,vocabs:vic-survey-purpose
+container:CSD,container:supportingDocuments prof:hasRole,termtype:Annotation,vocabs:vic-annotation-role
+container:CSD,container:annotations prof:hasRole,termtype:DocType,vocabs:vic-annotation-role
+surv:Parcel,parcel:purpose,termtype:ParcelPurpose,vocabs:vic-secondary-parcel-purpose vocabs:vic-parcel-purpose
+surv:SecondaryParcel,surv:parcelType,surv:ParcelType,vocabs:vic-secondary-parcel-type
+surv:PrimaryParcel,surv:parcelType,surv:ParcelType,vocabs:vic-parcel-type
+surv:Parcel,parcel:interestLink,surv:InterestType,vocabs:vic-interest-type
+sosa:ObservationCollection,sosa:usedProcedure,sosa:Procedure,vocabs:vic-procedure-used
+,surv:condition,surv:ConditionCode,vocabs:vic-monument-condition
+,surv:form,surv:MonumentForm,vocabs:vic-monument-form
+surv:CadastralMark surv:BoundaryMark surv:GeodeticMark surv:SurveyPoint,surv:purpose,surv:SurveyPointPurpose,vocabs:vic-surveypoint-purpose
+,surv:vectorPurpose,surv:VectorPurpose,vocabs:vic-vector-purpose
+,surv:state,surv:SurveyPointState,vocabs:vic-monument-state
+parcel:Parcel,parcel:state,termtype:ParcelState,vocabs:vic-parcel-state

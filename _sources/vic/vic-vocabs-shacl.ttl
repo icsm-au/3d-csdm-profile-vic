@@ -1,0 +1,75 @@
+@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
+@prefix csd: <https://linked.data.gov.au/def/csdm/csd/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix vic-monument-condition: <https://linked.data.gov.au/def/csdm/vic-monument-condition/> .
+@prefix vic-monument-form: <https://linked.data.gov.au/def/csdm/vic-monument-form/> .
+@prefix vic-monument-state: <https://linked.data.gov.au/def/csdm/vic-monument-state/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix registered-surveyors: <https://example.gov.vic/surveyors/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
+@prefix surveyreg-vic: <https://surveys-vic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix vicv: <https://linked.data.gov.au/def/csdm/vicprofilerules/vocabs/> .
+
+vicv:testMonumentForm
+    a                   sh:NodeShape ;
+    sh:targetObjectsOf     surv:monumentedBy ;
+    sh:property         [ sh:path        surv:form ;
+                          sh:name        "Monument form" ;
+                          sh:sparql      [ sh:message "Monument form code matches the current profile" ;
+                                           sh:select  """
+        PREFIX dct: <http://purl.org/dc/terms/>
+        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+        prefix vic-monument-form: <https://linked.data.gov.au/def/csdm/vic-monument-form/>
+        prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/>
+      SELECT $this (rdfs:label as ?path) ?value
+        WHERE {
+        ?value surv:form $this
+        FILTER ( ! STRSTARTS( STR($this), STR(vic-monument-form:x)) )
+        }
+""" ; ] ]
+.
+
+
+vicv:testConditionCode
+    a                   sh:NodeShape ;
+    sh:targetClass     surv:monumentedBy ;
+    sh:property         [ sh:path        surv:condition ;
+                          sh:name        "Monument form" ;
+                          sh:sparql      [ sh:message "Monument condition code matches the current profile" ;
+                                           sh:select  """
+        PREFIX dct: <http://purl.org/dc/terms/>
+        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+        prefix vic-monument-form: <https://linked.data.gov.au/def/csdm/vic-monument-form/>
+        prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/>
+      SELECT $this (rdfs:label as ?path) ?value
+        WHERE {
+        ?value surv:condition $this
+        FILTER ( ! STRSTARTS( STR($this), STR(vic-monument-condition:x)) )
+        }
+""" ; ] ]
+.
+
+vicv:testMonumentState
+    a                   sh:NodeShape ;
+    sh:targetClass     surv:monumentedBy ;
+    sh:property         [ sh:path        surv:state ;
+                          sh:name        "Monument state" ;
+                          sh:sparql      [ sh:message "Monument state code matches the current profile" ;
+                                           sh:select  """
+        PREFIX dct: <http://purl.org/dc/terms/>
+        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+        prefix vic-monument-form: <https://linked.data.gov.au/def/csdm/vic-monument-form/>
+        prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/>
+      SELECT $this (rdfs:label as ?path) ?value
+        WHERE {
+        ?value surv:state $this
+        FILTER ( ! STRSTARTS( STR($this), STR(vic-monument-state:x)) )
+        }
+""" ; ] ]
+.

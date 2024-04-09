@@ -1,0 +1,147 @@
+- title: Victorian CSD Provenance
+  content: |-
+   Minimal example - empty except for examples of profiled element using this profile rules.
+
+  base-output-filename: prov
+  snippets:
+    - language: json
+      ref: examples/prov.json
+      base-uri: http://www.example.com/features/
+
+
+- title: VIC Survey Marks Example
+  content: |-
+    Contains three Survey Marks, one of each subtype being a CadastralMark, a BoundaryMark, and a GeodeticReferenceMark.
+     
+    ![VIC Survey Marks Example](https://icsm-au.github.io/3d-csdm-profiles/assets/vic-points-ex.png)
+
+  base-output-filename: surveypoints
+  snippets:
+    - language: json
+      ref: examples/surveypoints.json
+      base-uri: https://www.vic-example.com/features/
+
+
+- title: VIC Survey Observation Example
+  content: |-
+    Contains two VectorObservations and two ObservedVectors between the three survey marks contained in the Survey Mark 
+    example above.
+     
+    ![VIC Survey Observation Example](https://icsm-au.github.io/3d-csdm-profiles/assets/vic-observation-ex.png)
+
+  base-output-filename: observations
+  snippets:
+    - language: json
+      ref: examples/observations.json
+      base-uri: https://www.vic-example.com/features/
+
+
+- title: VIC Survey Observation Example with alternative Equipment specification
+  content: |-
+    Contains two VectorObservations and two ObservedVectors between the three survey marks contained in the Survey Mark 
+    example above. Equipment is specified as a system of sensors, being a theodolite, EDM, and prism.
+     
+    ![VIC Survey Observation Example](https://icsm-au.github.io/3d-csdm-profiles/assets/vic-observation-ex.png)
+
+  base-output-filename: observations-sensor-resource
+  snippets:
+    - language: json
+      ref: examples/observations-sensor-resource.json
+      base-uri: https://www.vic-example.com/features/
+
+
+- title: VIC 3D Survey Mark Example
+  content: |-
+    VIC Survey Marks Example extended to include 3D survey marks. **verticalDatum** included for specification of a 
+    combined horizontal and vertical datum, epsg:5111 (Australian Height Datum) and **coordinates** have been extended 
+    to include **X**, **Y** and **Z** elements.
+
+  base-output-filename: 3d-surveypoints
+  snippets:
+    - language: json
+      ref: examples/3d-surveypoints.json
+      base-uri: https://www.vic-example.com/features/
+
+
+- title: VIC Extended Example
+  content: |-
+    PS914576X: Three lot subdivision of Crown Portion 16 (PT), Parish of Cut-Paw-Paw.  Consists of 26 Boundary Marks, 
+    nine Cadastral Marks, five Geodetic Reference Marks and five Occupation Marks. There are 39 total Station 
+    observations, three GNSS observations, and 15 derived observation. The dataset includes five primary parcels (three 
+    new, one to be extinguished, and an aggregate parcel representing the Owners Corporation. There are two secondary 
+    (easements) parcels.  The dataset includes occupation features, supporting documents, and a number of annotations.
+    
+    ![VIC Extended Example](https://icsm-au.github.io/3d-csdm-profiles/assets/vic-extended-ex.png)
+
+  base-output-filename: extended-example
+  snippets:
+    - language: json
+      ref: examples/extended-example.json
+      base-uri: https://www.vic-example.com/features/
+
+
+- title: VIC Parcel Example
+  content: |-
+    Contains a **single 2D Building parcel**, Lot 2, plus **14 SurveyMarks** that define the extent of the parcel, **6  
+    observed vectorObservations**  and **8  derived vectorObservations** where the boundaries are the face of a building 
+    or the middle of the wall on the boundary. Together, the **14 vectorObservations** defining the 14 boundaries 
+    (Bearing & Distance). **14 observedVectors** describing the 14 boundary line geometries.
+     
+    ![VIC Survey Observation Example](https://icsm-au.github.io/3d-csdm-profiles/assets/vic-polygon-ex.png)
+
+  base-output-filename: parcels
+  snippets:
+    - language: json
+      ref: examples/parcels.json
+      base-uri: https://www.vic-example.com/features/
+
+
+- title: VIC Secondary Parcel Example
+  content: |-
+    Contains **five Primary Parcels**, Lots 1 to 3, the parent parcel (to be extinguished), and an **Aggregate Parcel** 
+    representing the Owners Corporation created over Lots 1 to 3. There are **two Easements**, Areas E1 and E2. Dataset 
+    also includes **22 SurveyMarks** that define the extent of the primary and secondary parcels, 
+    **26 vectorObservations** defining the 26 boundaries (Bearing & Distance), and **26 observedVectors** describing the 
+    26 boundary line geometries.  The **2 Secondary Parcels** describe both conventional Easements (**1**) and easements 
+    in Gross (**2**), with a total of **4 Interests** described.
+     
+    ![VIC Survey Observation Example](https://icsm-au.github.io/3d-csdm-profiles/assets/vic-secondary-example.png)
+
+  base-output-filename: secondary-parcels
+  snippets:
+    - language: json
+      ref: examples/secondary-parcels.json
+      base-uri: https://www.vic-example.com/features/
+
+
+- title: VIC Annotation Example
+  content: |-
+    Contains 10 annotation examples that may be included on the plan face of a conventional VIC Deposited Plan or in an 
+    ePlan LandXML dataset. The data for this example is same data used for the VIC Secondary Parcel example. In some 
+    instances the annotation relates to a specific parcel or parcels. In those cases, the annotation instance includes a 
+    **references** element that lists the ID(s) of the parcel(s) that the annotation refers to.
+
+  base-output-filename: annotation
+  snippets:
+    - language: json
+      ref: examples/annotation.json
+      base-uri: https://www.vic-example.com/features/
+
+
+- title: VIC Occupation Example
+  content: |-
+    Includes the same dataset for the VIC Secondary Parcel Example above plus 2 additional **GeodeticReferenceMarks**, 
+    three **CadastralMarks**, and five **OccupationMarks** fixing two firewalls between three dwelling units. Relevant 
+    **observedVectors** and **vectorObservations** have also been included. The diagram displays two of the survey 
+    measurements to **OccupationMarks** at the front of the buildings. The firewalls are shown on the boundaries between 
+    dwelling 1 and 2, and 2 and 3. The building footprints (minus the firewalls) are shown inbetween, and are included 
+    in the **OccupationFeatures**. The occupation marks **touch** corners of the fire walls. The boundary lines on or 
+    within the fire walls include comments indicating if the boundary is the face of the firewall or the midline.
+    
+    ![VIC Occupation Example](https://icsm-au.github.io/3d-csdm-profiles/assets/vic-occupation-example.png)
+
+  base-output-filename: occupation-example
+  snippets:
+    - language: json
+      ref: examples/occupation-example.json
+      base-uri: https://www.vic-example.com/features/

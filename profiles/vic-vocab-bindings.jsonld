@@ -1,0 +1,218 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "policy": "http://www.opengis.net/def/metamodel/ogc-na/",
+    "surv": "https://linked.data.gov.au/def/csdm/surveyfeatures/",
+    "surveyobs": "https://linked.data.gov.au/def/csdm/surveyobs/",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "container": "https://linked.data.gov.au/def/csdm/container/",
+    "termtype": "https://linked.data.gov.au/def/csdm/termtypes/",
+    "parcel": "https://linked.data.gov.au/def/csdm/parcels/",
+    "qb": "http://purl.org/linked-data/cube#",
+    "vocabs": "https://linked.data.gov.au/def/csdm/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "Classes": {
+      "@type": "@id",
+      "@id": "sh:targetClass"
+    },
+    "Property": "@id",
+    "Range": {
+      "@type": "@id",
+      "@id": "rdfs:range"
+    },
+    "Schemes": {
+      "@type": "@id",
+      "@id": "qb:codeList"
+    },
+    "Label": "rdfs:label"
+  },
+  "@graph": [
+    {
+      "Classes": [
+        "container:CSD"
+      ],
+      "Property": "container:horizontalCRS",
+      "Range": "termtype:AllowableCoordinateReferenceSystem",
+      "Schemes": [
+        "vocabs:vic-crs"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [],
+      "Property": "container:adminUnit",
+      "Range": "termtype:AdminUnit",
+      "Schemes": [
+        "vocabs:vic-locality",
+        "vocabs:vic-parish",
+        "vocabs:vic-local-government-area",
+        "vocabs:vic-county",
+        "vocabs:vic-township"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "container:CSD"
+      ],
+      "Property": "container:verticalDatum",
+      "Range": "termtype:AllowableCoordinateReferenceSystem",
+      "Schemes": [
+        "vocabs:vic-vhd"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "container:CSD"
+      ],
+      "Property": "container:purpose",
+      "Range": "surv:SurveyPurpose",
+      "Schemes": [
+        "vocabs:vic-survey-purpose"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "container:CSD"
+      ],
+      "Property": "container:supportingDocuments prof:hasRole",
+      "Range": "termtype:Annotation",
+      "Schemes": [
+        "vocabs:vic-annotation-role"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "container:CSD"
+      ],
+      "Property": "container:annotations prof:hasRole",
+      "Range": "termtype:DocType",
+      "Schemes": [
+        "vocabs:vic-annotation-role"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "surv:Parcel"
+      ],
+      "Property": "parcel:purpose",
+      "Range": "termtype:ParcelPurpose",
+      "Schemes": [
+        "vocabs:vic-secondary-parcel-purpose",
+        "vocabs:vic-parcel-purpose"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "surv:SecondaryParcel"
+      ],
+      "Property": "surv:parcelType",
+      "Range": "surv:ParcelType",
+      "Schemes": [
+        "vocabs:vic-secondary-parcel-type"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "surv:PrimaryParcel"
+      ],
+      "Property": "surv:parcelType",
+      "Range": "surv:ParcelType",
+      "Schemes": [
+        "vocabs:vic-parcel-type"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "surv:Parcel"
+      ],
+      "Property": "parcel:interestLink",
+      "Range": "surv:InterestType",
+      "Schemes": [
+        "vocabs:vic-interest-type"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "sosa:ObservationCollection"
+      ],
+      "Property": "sosa:usedProcedure",
+      "Range": "sosa:Procedure",
+      "Schemes": [
+        "vocabs:vic-procedure-used"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [],
+      "Property": "surv:condition",
+      "Range": "surv:ConditionCode",
+      "Schemes": [
+        "vocabs:vic-monument-condition"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [],
+      "Property": "surv:form",
+      "Range": "surv:MonumentForm",
+      "Schemes": [
+        "vocabs:vic-monument-form"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "surv:CadastralMark",
+        "surv:BoundaryMark",
+        "surv:GeodeticMark",
+        "surv:SurveyPoint"
+      ],
+      "Property": "surv:purpose",
+      "Range": "surv:SurveyPointPurpose",
+      "Schemes": [
+        "vocabs:vic-surveypoint-purpose"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [],
+      "Property": "surv:vectorPurpose",
+      "Range": "surv:VectorPurpose",
+      "Schemes": [
+        "vocabs:vic-vector-purpose"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [],
+      "Property": "surv:state",
+      "Range": "surv:SurveyPointState",
+      "Schemes": [
+        "vocabs:vic-monument-state"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "parcel:Parcel"
+      ],
+      "Property": "parcel:state",
+      "Range": "termtype:ParcelState",
+      "Schemes": [
+        "vocabs:vic-parcel-state"
+      ],
+      "@type": "qb:CodedProperty"
+    }
+  ]
+}
