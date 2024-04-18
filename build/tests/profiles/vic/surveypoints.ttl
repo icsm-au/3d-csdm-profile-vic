@@ -53,10 +53,10 @@
     rdfs:label [ rdfs:label "Kialla PM 158" ;
             dcterms:hasPart [ rdfs:label "Kialla" ;
                     commonpatterns:namePartType "parish" ],
-                [ rdfs:label "PM" ;
-                    commonpatterns:namePartType "MarkType" ],
                 [ rdfs:label "158" ;
-                    commonpatterns:namePartType "MarkIdentifier" ] ] ;
+                    commonpatterns:namePartType "MarkIdentifier" ],
+                [ rdfs:label "PM" ;
+                    commonpatterns:namePartType "MarkType" ] ] ;
     rdfs:comment "M" ;
     surv:geodeticid "287201580" ;
     surv:monumentedBy [ surv:condition vic-monument-condition:ok ;
@@ -75,10 +75,10 @@
     rdfs:label [ rdfs:label "OP FD (PS649028H)" ;
             dcterms:hasPart [ rdfs:label "OP" ;
                     commonpatterns:namePartType "MarkType" ],
-                [ rdfs:label "PS649028H" ;
-                    commonpatterns:namePartType "planIdentifier" ],
                 [ rdfs:label "FD" ;
-                    commonpatterns:namePartType "MarkFound" ] ] ;
+                    commonpatterns:namePartType "MarkFound" ],
+                [ rdfs:label "PS649028H" ;
+                    commonpatterns:namePartType "planIdentifier" ] ] ;
     rdfs:comment "0.12m north of Pump House and 0.02m west of H.Board fence (15+)" ;
     surv:monumentedBy [ surv:condition vic-monument-condition:found ;
             surv:form vic-monument-form:peg ;
@@ -90,14 +90,14 @@
 <https://www.vic-example.com/features/CGPNT-126> a surv:CadastralMark,
         geojson:Feature ;
     rdfs:label [ rdfs:label "ORM Pipe FD (PS649028H)" ;
-            dcterms:hasPart [ rdfs:label "FD" ;
-                    commonpatterns:namePartType "MarkFound" ],
+            dcterms:hasPart [ rdfs:label "PS649028H" ;
+                    commonpatterns:namePartType "planIdentifier" ],
                 [ rdfs:label "Pipe" ;
                     commonpatterns:namePartType "MarkIdentifier" ],
                 [ rdfs:label "ORM" ;
                     commonpatterns:namePartType "MarkType" ],
-                [ rdfs:label "PS649028H" ;
-                    commonpatterns:namePartType "planIdentifier" ] ] ;
+                [ rdfs:label "FD" ;
+                    commonpatterns:namePartType "MarkFound" ] ] ;
     rdfs:comment "L" ;
     surv:monumentedBy [ surv:condition vic-monument-condition:found ;
             surv:form vic-monument-form:g-i-pipe ;

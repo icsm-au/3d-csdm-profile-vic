@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/vic/context.jsonld",
+    "https://icsm-au.github.io/3d-csdm-profile-vic/build/annotated/profiles/vic/context.jsonld",
     {
       "vic-leg": "http://classic.austlii.edu.au/au/legis/vic/consol_act/",
       "vic-survey-directive": "https://www.land.vic.gov.au/__data/assets/word_doc/0031/492772/Victorian-Cadastral-Surveys-Practice-Directives-2021-Edition-2-Final.docx",

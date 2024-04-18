@@ -37,11 +37,11 @@
             prof:hasRole icsm-admin-unit-type:localGovernmentArea ;
             oa:hasTarget vic-local-government-area:328 ],
         [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
-            prof:hasRole icsm-admin-unit-type:county ;
-            oa:hasTarget vic-county:1025 ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
             prof:hasRole icsm-admin-unit-type:parish ;
-            oa:hasTarget vic-parish:2872 ] ;
+            oa:hasTarget vic-parish:2872 ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
+            prof:hasRole icsm-admin-unit-type:county ;
+            oa:hasTarget vic-county:1025 ] ;
     container:bearingRotation 0e+00 ;
     container:horizontalCRS epsg:7855 ;
     container:observedVectors <https://www.vic-example.com/features/observedVectors> ;
@@ -139,12 +139,12 @@
 <https://www.vic-example.com/features/287201580> a surv:GeodeticReferenceMark,
         geojson:Feature ;
     rdfs:label [ rdfs:label "Kialla PM 158" ;
-            dcterms:hasPart [ rdfs:label "158" ;
-                    commonpatterns:namePartType "MarkIdentifier" ],
+            dcterms:hasPart [ rdfs:label "PM" ;
+                    commonpatterns:namePartType "MarkType" ],
                 [ rdfs:label "Kialla" ;
                     commonpatterns:namePartType "parish" ],
-                [ rdfs:label "PM" ;
-                    commonpatterns:namePartType "MarkType" ] ] ;
+                [ rdfs:label "158" ;
+                    commonpatterns:namePartType "MarkIdentifier" ] ] ;
     rdfs:comment "M" ;
     surv:geodeticid "287201580" ;
     surv:monumentedBy [ surv:condition vic-monument-condition:ok ;
@@ -182,14 +182,14 @@
 <https://www.vic-example.com/features/CGPNT-126> a surv:CadastralMark,
         geojson:Feature ;
     rdfs:label [ rdfs:label "ORM Pipe FD (PS649028H)" ;
-            dcterms:hasPart [ rdfs:label "ORM" ;
-                    commonpatterns:namePartType "MarkType" ],
-                [ rdfs:label "Pipe" ;
-                    commonpatterns:namePartType "MarkIdentifier" ],
-                [ rdfs:label "FD" ;
+            dcterms:hasPart [ rdfs:label "FD" ;
                     commonpatterns:namePartType "MarkFound" ],
                 [ rdfs:label "PS649028H" ;
-                    commonpatterns:namePartType "planIdentifier" ] ] ;
+                    commonpatterns:namePartType "planIdentifier" ],
+                [ rdfs:label "Pipe" ;
+                    commonpatterns:namePartType "MarkIdentifier" ],
+                [ rdfs:label "ORM" ;
+                    commonpatterns:namePartType "MarkType" ] ] ;
     rdfs:comment "L" ;
     surv:monumentedBy [ surv:condition vic-monument-condition:found ;
             surv:form vic-monument-form:g-i-pipe ;

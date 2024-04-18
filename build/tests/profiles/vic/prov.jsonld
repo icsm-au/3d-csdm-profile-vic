@@ -192,5 +192,5 @@
   "parcels": [],
   "supportingDocuments": [],
   "annotations": [],
-  "@context": "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/vic/context.jsonld"
+  "@context": "https://icsm-au.github.io/3d-csdm-profile-vic/build/annotated/profiles/vic/context.jsonld"
 }
