@@ -27,14 +27,14 @@
     rdfs:label "PS 842689H" ;
     prov:wasGeneratedBy <https://www.vic-example.com/features/DP-1-S2> ;
     container:adminUnit [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
-            prof:hasRole icsm-admin-unit-type:county ;
-            oa:hasTarget vic-county:1025 ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
             prof:hasRole icsm-admin-unit-type:parish ;
             oa:hasTarget vic-parish:2872 ],
         [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
             prof:hasRole icsm-admin-unit-type:localGovernmentArea ;
-            oa:hasTarget vic-local-government-area:328 ] ;
+            oa:hasTarget vic-local-government-area:328 ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
+            prof:hasRole icsm-admin-unit-type:county ;
+            oa:hasTarget vic-county:1025 ] ;
     container:bearingRotation 0e+00 ;
     container:horizontalCRS epsg:7855 ;
     container:points <https://www.vic-example.com/features/BoundaryMark>,
@@ -54,10 +54,10 @@
     rdfs:label [ rdfs:label "Kialla PM 158" ;
             dcterms:hasPart [ rdfs:label "Kialla" ;
                     commonpatterns:namePartType "parish" ],
-                [ rdfs:label "PM" ;
-                    commonpatterns:namePartType "MarkType" ],
                 [ rdfs:label "158" ;
-                    commonpatterns:namePartType "MarkIdentifier" ] ] ;
+                    commonpatterns:namePartType "MarkIdentifier" ],
+                [ rdfs:label "PM" ;
+                    commonpatterns:namePartType "MarkType" ] ] ;
     rdfs:comment "M" ;
     surv:geodeticid "287201580" ;
     surv:monumentedBy [ surv:condition vic-monument-condition:ok ;
@@ -93,10 +93,10 @@
     rdfs:label [ rdfs:label "ORM Pipe FD (PS649028H)" ;
             dcterms:hasPart [ rdfs:label "ORM" ;
                     commonpatterns:namePartType "MarkType" ],
-                [ rdfs:label "PS649028H" ;
-                    commonpatterns:namePartType "planIdentifier" ],
                 [ rdfs:label "FD" ;
                     commonpatterns:namePartType "MarkFound" ],
+                [ rdfs:label "PS649028H" ;
+                    commonpatterns:namePartType "planIdentifier" ],
                 [ rdfs:label "Pipe" ;
                     commonpatterns:namePartType "MarkIdentifier" ] ] ;
     rdfs:comment "L" ;

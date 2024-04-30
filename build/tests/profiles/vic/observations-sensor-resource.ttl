@@ -34,11 +34,11 @@
     rdfs:label "PS 842689H" ;
     prov:wasGeneratedBy <https://www.vic-example.com/features/DP-1-S2> ;
     container:adminUnit [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
-            prof:hasRole icsm-admin-unit-type:localGovernmentArea ;
-            oa:hasTarget vic-local-government-area:328 ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
             prof:hasRole icsm-admin-unit-type:parish ;
             oa:hasTarget vic-parish:2872 ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
+            prof:hasRole icsm-admin-unit-type:localGovernmentArea ;
+            oa:hasTarget vic-local-government-area:328 ],
         [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
             prof:hasRole icsm-admin-unit-type:county ;
             oa:hasTarget vic-county:1025 ] ;
@@ -120,14 +120,14 @@
 <vectorobservation:theodolite+edm> a sosa:ObservationCollection,
         geojson:FeatureCollection ;
     sosa:hasMember [ a geojson:Feature ;
-            sosa:hasFeatureOfInterest <https://www.vic-example.com/features/OBS-001> ;
-            sosa:hasResult [ surv:distance 3.23e+00 ] ;
+            sosa:hasFeatureOfInterest <https://www.vic-example.com/features/OBS-343> ;
+            sosa:hasResult [ surv:distance 5.7028e+01 ] ;
             sosa:resultTime "2020-11-27T00:00:00Z" ;
             ns2:angleType icsm-angle-type:bearing ;
             ns2:distanceType icsm-distance-type:horizontal ],
         [ a geojson:Feature ;
-            sosa:hasFeatureOfInterest <https://www.vic-example.com/features/OBS-343> ;
-            sosa:hasResult [ surv:distance 5.7028e+01 ] ;
+            sosa:hasFeatureOfInterest <https://www.vic-example.com/features/OBS-001> ;
+            sosa:hasResult [ surv:distance 3.23e+00 ] ;
             sosa:resultTime "2020-11-27T00:00:00Z" ;
             ns2:angleType icsm-angle-type:bearing ;
             ns2:distanceType icsm-distance-type:horizontal ] ;
@@ -139,10 +139,10 @@
 <https://www.vic-example.com/features/287201580> a surv:GeodeticReferenceMark,
         geojson:Feature ;
     rdfs:label [ rdfs:label "Kialla PM 158" ;
-            dcterms:hasPart [ rdfs:label "PM" ;
-                    commonpatterns:namePartType "MarkType" ],
-                [ rdfs:label "Kialla" ;
+            dcterms:hasPart [ rdfs:label "Kialla" ;
                     commonpatterns:namePartType "parish" ],
+                [ rdfs:label "PM" ;
+                    commonpatterns:namePartType "MarkType" ],
                 [ rdfs:label "158" ;
                     commonpatterns:namePartType "MarkIdentifier" ] ] ;
     rdfs:comment "M" ;
@@ -157,12 +157,12 @@
 <https://www.vic-example.com/features/CGPNT-100> a surv:BoundaryMark,
         geojson:Feature ;
     rdfs:label [ rdfs:label "OP FD (PS649028H)" ;
-            dcterms:hasPart [ rdfs:label "FD" ;
-                    commonpatterns:namePartType "MarkFound" ],
+            dcterms:hasPart [ rdfs:label "OP" ;
+                    commonpatterns:namePartType "MarkType" ],
                 [ rdfs:label "PS649028H" ;
                     commonpatterns:namePartType "planIdentifier" ],
-                [ rdfs:label "OP" ;
-                    commonpatterns:namePartType "MarkType" ] ] ;
+                [ rdfs:label "FD" ;
+                    commonpatterns:namePartType "MarkFound" ] ] ;
     rdfs:comment "0.12m north of Pump House and 0.02m west of H.Board fence (15+)" ;
     surv:monumentedBy [ surv:condition vic-monument-condition:found ;
             surv:form vic-monument-form:peg ;
@@ -184,12 +184,12 @@
     rdfs:label [ rdfs:label "ORM Pipe FD (PS649028H)" ;
             dcterms:hasPart [ rdfs:label "FD" ;
                     commonpatterns:namePartType "MarkFound" ],
-                [ rdfs:label "PS649028H" ;
-                    commonpatterns:namePartType "planIdentifier" ],
                 [ rdfs:label "Pipe" ;
                     commonpatterns:namePartType "MarkIdentifier" ],
                 [ rdfs:label "ORM" ;
-                    commonpatterns:namePartType "MarkType" ] ] ;
+                    commonpatterns:namePartType "MarkType" ],
+                [ rdfs:label "PS649028H" ;
+                    commonpatterns:namePartType "planIdentifier" ] ] ;
     rdfs:comment "L" ;
     surv:monumentedBy [ surv:condition vic-monument-condition:found ;
             surv:form vic-monument-form:g-i-pipe ;
