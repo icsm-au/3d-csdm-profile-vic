@@ -1,4 +1,5 @@
 {
+  "@context": "https://icsm-au.github.io/3d-csdm-profile-vic/build/annotated/profiles/vic/context.jsonld",
   "id": "PS-842689H",
   "name": "PS 842689H",
   "description": "Victoria Survey Points Example",
@@ -255,6 +256,5 @@
   "observedVectors": [],
   "parcels": [],
   "supportingDocuments": [],
-  "annotations": [],
-  "@context": "https://icsm-au.github.io/3d-csdm-profile-vic/build/annotated/profiles/vic/context.jsonld"
+  "annotations": []
 }

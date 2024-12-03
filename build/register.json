@@ -2,12 +2,12 @@
   "name": "Victoria Implementation Profile for 3D CSDM",
   "abstract": "This repository contains the Victoria profile of the [Cadastral Survey Data Model Exchange Specification](https://icsm-au.github.io/3d-csdm-common/), \nextending the  [common ICSM profile](https://icsm-au.github.io/3d-csdm-profile-icsm/).\n \n",
   "description": "\nThe encoding specification and all profiles are compatible with the [OGC API Features](https://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-main.html) data exchange specification, and can thus be implemented by any standards compliant software capable of handling nested object sub-schemas and control of codelist in content.\n\nProfiles are defined in a consistent, machine-readable and validatable way using the [OGC Building Blocks methodology](https://ogcincubator.github.io/bblocks-docs/).\n",
-  "modified": "2024-04-30T07:38:09.071329",
+  "modified": "2024-12-03T04:39:36.172640",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"ed7b21b1b7b4ec68c6f31fe821c8b6967e49405f",
-      "shortCommitId": "\"ed7b21",
-      "date": "2024-04-26T11:21:08+00:00\""
+      "commitId": "\"4f836104f60184d3a6e2f2272208584d6cae081d",
+      "shortCommitId": "\"4f8361",
+      "date": "2024-11-28T20:01:31+00:00\""
     }
   },
   "gitRepository": "https://github.com/icsm-au/3d-csdm-profile-vic",
@@ -31,7 +31,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2024-04-30",
+      "dateOfLastChange": "2023-08-08",
       "sources": [
         {
           "title": "3D Cadastre Survey Data Model",
@@ -57,35 +57,35 @@
           "https://icsm-au.github.io/3d-csdm-profile-vic/_sources/vic/vic-vocabs-shacl.ttl"
         ],
         "icsm.profiles.common": [
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl"
         ],
         "icsm.csdm.features.CSD": [
-          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl",
           "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl",
-          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl"
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl",
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl"
         ],
         "icsm.csdm.datatypes.compoundName": [
           "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl"
         ],
-        "ogc.geo.topo.features.topo-feature": [
+        "ogc.geo.topo.features.topo-feature-collection": [
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
-        "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
-        ],
-        "ogc.geo.topo.features.topo-arc": [
+        "ogc.geo.topo.features.topo-feature": [
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "icsm.csdm.features.SurveyObservations": [
           "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl"
         ],
-        "ogc.geo.topo.features.topo-feature-collection": [
+        "ogc.sosa.properties.observation": [
+          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+        ],
+        "ogc.geo.topo.features.topo-arc": [
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
@@ -129,20 +129,19 @@
       "sourceSchema": "https://icsm-au.github.io/3d-csdm-profile-vic/_sources/vic/schema.json",
       "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-vic/_sources/vic/context.jsonld",
       "sourceFiles": "https://icsm-au.github.io/3d-csdm-profile-vic/_sources/vic/",
-      "validationPassed": true,
+      "rdfData": [
+        "https://icsm-au.github.io/3d-csdm-profile-vic/data.ttl"
+      ],
+      "validationPassed": false,
       "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-vic/blob/main/build/tests/profiles/vic/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://icsm-au.github.io/3d-csdm-profile-vic/build/generateddocs/json-full/profiles/vic/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://icsm-au.github.io/3d-csdm-profile-vic/build/generateddocs/markdown/profiles/vic/index.md"
         },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://icsm-au.github.io/3d-csdm-profile-vic/build/generateddocs/slate-build/profiles/vic/"
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://icsm-au.github.io/3d-csdm-profile-vic/build/generateddocs/json-full/profiles/vic/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",

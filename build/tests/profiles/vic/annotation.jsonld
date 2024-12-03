@@ -1,4 +1,5 @@
 {
+  "@context": "https://icsm-au.github.io/3d-csdm-profile-vic/build/annotated/profiles/vic/context.jsonld",
   "id": "PS914576X",
   "name": "PS 914576 X",
   "description": "Victoria Annotation Example",
@@ -1858,6 +1859,5 @@
       "href": "vic_leg:sa1988153/s18.html",
       "role": "vic-annotation-role:pos18-a"
     }
-  ],
-  "@context": "https://icsm-au.github.io/3d-csdm-profile-vic/build/annotated/profiles/vic/context.jsonld"
+  ]
 }

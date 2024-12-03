@@ -1,0 +1,124 @@
+Validation report for icsm.profiles.vic - Victoria Cadastral Survey Data Exchange Profile
+Generated 2024-12-03T04:39:48.606790+00:00
+=== Files ===
+Using prov (example_1_1) from examples
+JSON-LD context is present - uplifting
+Output JSON-LD prov.jsonld created
+Output Turtle prov.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: [{'activityType': 'planNumberObtained', 'wasAssociatedWith': {'agentType': 'person', 'name': 'Stef Surphs', 'actedOnBehalfOf': {'agentType': 'Organisation', 'name': 'Son of a Surveyor Ltd'}}, 'generated': 'PS899845B-v1', 'startedAtTime': '2023-05-11T12:02:02Z', 'endedAtTime': '2023-05-11T12:02:20Z'}, {'activityType': 'fieldSurvey', 'wasAssociatedWith': {'agentType': 'person', 'name': 'Stef Surphs', 'actedOnBehalfOf': {'agentType': 'Organisation', 'name': 'Son of a Surveyor Ltd'}}, 'generated': 'PS899845B-v2', 'startedAtTime': '2023-04-20T09:03:22Z', 'endedAtTime': '2023-06-08T16:05:20Z'}, {'activityType': 'certifiedDate', 'wasAssociatedWith': {'agentType': 'person', 'name': 'Stef Surphs', 'actedOnBehalfOf': {'agentType': 'Organisation', 'name': 'Son of a Surveyor Ltd'}}, 'generated': 'PS899845B-v3', 'startedAtTime': '2023-06-09T14:15:26Z', 'endedAtTime': '2023-06-09T14:15:53Z'}, {'activityType': 'csdSigned', 'wasAssociatedWith': {'agentType': 'person', 'name': 'Stef Surphs', 'actedOnBehalfOf': {'agentType': 'Organisation', 'name': 'Son of a Surveyor Ltd'}}, 'generated': 'PS899845B-v4', 'startedAtTime': '2023-06-09T14:18:06Z', 'endedAtTime': '2023-06-09T14:18:43Z'}, {'activityType': 'csdLodgedWithSpear', 'wasAssociatedWith': {'agentType': 'person', 'name': 'Stef Surphs', 'actedOnBehalfOf': {'agentType': 'Organisation', 'name': 'Son of a Surveyor Ltd'}}, 'generated': 'PS899845B-v5', 'startedAtTime': '2023-06-09T14:36:22Z', 'endedAtTime': '2023-06-09T14:40:02Z'}, {'activityType': 'csdCertified', 'wasAssociatedWith': {'agentType': 'person', 'name': 'Alice E. Plains', 'actedOnBehalfOf': {'agentType': 'Organisation', 'name': 'City of Bayside'}}, 'generated': 'PS899845B-v6', 'startedAtTime': '2023-06-09T14:50:22Z', 'endedAtTime': '2023-06-23T10:11:12Z'}, {'activityType': 'csdReleasedforLodgement', 'wasAssociatedWith': {'agentType': 'person', 'name': 'Stef Surphs', 'actedOnBehalfOf': {'agentType': 'Organisation', 'name': 'Son of a Surveyor Ltd'}}, 'generated': 'PS899845B-v7', 'startedAtTime': '2023-06-23T13:45:18Z', 'endedAtTime': '2023-06-23T13:17:59Z'}, {'activityType': 'csdLodged', 'wasAssociatedWith': {'agentType': 'person', 'name': 'Len E. Beagle', 'actedOnBehalfOf': {'agentType': 'Organisation', 'name': 'Conveyancing Calamities Ltd.'}}, 'generated': 'PS899845B-v8', 'startedAtTime': '2023-06-23T13:17:59Z', 'endedAtTime': '2023-06-28T16:49:05Z'}, {'activityType': 'csdExamination', 'wasAssociatedWith': {'agentType': 'person', 'name': 'Examiner Trudeau', 'actedOnBehalfOf': {'agentType': 'Organisation', 'name': 'Land Use Victoria'}}, 'generated': 'PS899845B-v9', 'startedAtTime': '2023-06-28T16:49:05Z', 'endedAtTime': '2023-07-12T08:55:01Z'}, {'activityType': 'csdAmendments', 'wasAssociatedWith': {'agentType': 'person', 'name': 'Stef Surphs', 'actedOnBehalfOf': {'agentType': 'Organisation', 'name': 'Son of a Surveyor Ltd'}}, 'generated': 'PS899845B-v10', 'startedAtTime': '2023-07-12T08:55:01Z', 'endedAtTime': '2023-07-21T13:07:33Z'}, {'activityType': 'csdRegistered', 'wasAssociatedWith': {'agentType': 'person', 'name': 'Examiner Trudeau', 'actedOnBehalfOf': {'agentType': 'Organisation', 'name': 'Land Use Victoria'}}, 'generated': 'PS899845B-v11', 'startedAtTime': '2023-07-21T13:07:33Z'}] is not valid under any of the given schemas
+
+Failed validating 'anyOf' in schema[0]['properties']['has_provenance']:
+    {'anyOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Prov'},
+               {'type': 'null'}]}
+
+On instance['has_provenance']:
+    [{'activityType': 'planNumberObtained',
+      'endedAtTime': '2023-05-11T12:02:20Z',
+      'generated': 'PS899845B-v1',
+      'startedAtTime': '2023-05-11T12:02:02Z',
+      'wasAssociatedWith': {'actedOnBehalfOf': {'agentType': 'Organisation',
+                                                'name': 'Son of a Surveyor '
+                                                        'Ltd'},
+                            'agentType': 'person',
+                            'name': 'Stef Surphs'}},
+     {'activityType': 'fieldSurvey',
+      'endedAtTime': '2023-06-08T16:05:20Z',
+      'generated': 'PS899845B-v2',
+      'startedAtTime': '2023-04-20T09:03:22Z',
+      'wasAssociatedWith': {'actedOnBehalfOf': {'agentType': 'Organisation',
+                                                'name': 'Son of a Surveyor '
+                                                        'Ltd'},
+                            'agentType': 'person',
+                            'name': 'Stef Surphs'}},
+     {'activityType': 'certifiedDate',
+      'endedAtTime': '2023-06-09T14:15:53Z',
+      'generated': 'PS899845B-v3',
+      'startedAtTime': '2023-06-09T14:15:26Z',
+      'wasAssociatedWith': {'actedOnBehalfOf': {'agentType': 'Organisation',
+                                                'name': 'Son of a Surveyor '
+                                                        'Ltd'},
+                            'agentType': 'person',
+                            'name': 'Stef Surphs'}},
+     {'activityType': 'csdSigned',
+      'endedAtTime': '2023-06-09T14:18:43Z',
+      'generated': 'PS899845B-v4',
+      'startedAtTime': '2023-06-09T14:18:06Z',
+      'wasAssociatedWith': {'actedOnBehalfOf': {'agentType': 'Organisation',
+                                                'name': 'Son of a Surveyor '
+                                                        'Ltd'},
+                            'agentType': 'person',
+                            'name': 'Stef Surphs'}},
+     {'activityType': 'csdLodgedWithSpear',
+      'endedAtTime': '2023-06-09T14:40:02Z',
+      'generated': 'PS899845B-v5',
+      'startedAtTime': '2023-06-09T14:36:22Z',
+      'wasAssociatedWith': {'actedOnBehalfOf': {'agentType': 'Organisation',
+                                                'name': 'Son of a Surveyor '
+                                                        'Ltd'},
+                            'agentType': 'person',
+                            'name': 'Stef Surphs'}},
+     {'activityType': 'csdCertified',
+      'endedAtTime': '2023-06-23T10:11:12Z',
+      'generated': 'PS899845B-v6',
+      'startedAtTime': '2023-06-09T14:50:22Z',
+      'wasAssociatedWith': {'actedOnBehalfOf': {'agentType': 'Organisation',
+                                                'name': 'City of Bayside'},
+                            'agentType': 'person',
+                            'name': 'Alice E. Plains'}},
+     {'activityType': 'csdReleasedforLodgement',
+      'endedAtTime': '2023-06-23T13:17:59Z',
+      'generated': 'PS899845B-v7',
+      'startedAtTime': '2023-06-23T13:45:18Z',
+      'wasAssociatedWith': {'actedOnBehalfOf': {'agentType': 'Organisation',
+                                                'name': 'Son of a Surveyor '
+                                                        'Ltd'},
+                            'agentType': 'person',
+                            'name': 'Stef Surphs'}},
+     {'activityType': 'csdLodged',
+      'endedAtTime': '2023-06-28T16:49:05Z',
+      'generated': 'PS899845B-v8',
+      'startedAtTime': '2023-06-23T13:17:59Z',
+      'wasAssociatedWith': {'actedOnBehalfOf': {'agentType': 'Organisation',
+                                                'name': 'Conveyancing '
+                                                        'Calamities Ltd.'},
+                            'agentType': 'person',
+                            'name': 'Len E. Beagle'}},
+     {'activityType': 'csdExamination',
+      'endedAtTime': '2023-07-12T08:55:01Z',
+      'generated': 'PS899845B-v9',
+      'startedAtTime': '2023-06-28T16:49:05Z',
+      'wasAssociatedWith': {'actedOnBehalfOf': {'agentType': 'Organisation',
+                                                'name': 'Land Use '
+                                                        'Victoria'},
+                            'agentType': 'person',
+                            'name': 'Examiner Trudeau'}},
+     {'activityType': 'csdAmendments',
+      'endedAtTime': '2023-07-21T13:07:33Z',
+      'generated': 'PS899845B-v10',
+      'startedAtTime': '2023-07-12T08:55:01Z',
+      'wasAssociatedWith': {'actedOnBehalfOf': {'agentType': 'Organisation',
+                                                'name': 'Son of a Surveyor '
+                                                        'Ltd'},
+                            'agentType': 'person',
+                            'name': 'Stef Surphs'}},
+     {'activityType': 'csdRegistered',
+      'generated': 'PS899845B-v11',
+      'startedAtTime': '2023-07-21T13:07:33Z',
+      'wasAssociatedWith': {'actedOnBehalfOf': {'agentType': 'Organisation',
+                                                'name': 'Land Use '
+                                                        'Victoria'},
+                            'agentType': 'person',
+                            'name': 'Examiner Trudeau'}}]
+=== End JSON Schema ===
+
+=== SHACL ===
+
+** Validation error **
+Error retrieving https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/icsm-admin-unit-type.ttl: HTTP Error 404: Not Found
+=== End SHACL ===
+
