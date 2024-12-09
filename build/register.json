@@ -2,7 +2,7 @@
   "name": "Victoria Implementation Profile for 3D CSDM",
   "abstract": "This repository contains the Victoria profile of the [Cadastral Survey Data Model Exchange Specification](https://icsm-au.github.io/3d-csdm-common/), \nextending the  [common ICSM profile](https://icsm-au.github.io/3d-csdm-profile-icsm/).\n \n",
   "description": "\nThe encoding specification and all profiles are compatible with the [OGC API Features](https://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-main.html) data exchange specification, and can thus be implemented by any standards compliant software capable of handling nested object sub-schemas and control of codelist in content.\n\nProfiles are defined in a consistent, machine-readable and validatable way using the [OGC Building Blocks methodology](https://ogcincubator.github.io/bblocks-docs/).\n",
-  "modified": "2024-12-03T04:39:36.172640",
+  "modified": "2024-12-09T00:55:05.020510",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"4f836104f60184d3a6e2f2272208584d6cae081d",
@@ -31,7 +31,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2023-08-08",
+      "dateOfLastChange": "2024-12-09",
       "sources": [
         {
           "title": "3D Cadastre Survey Data Model",
@@ -53,31 +53,31 @@
       "superBBlock": false,
       "shaclRules": {
         "icsm.profiles.vic": [
-          "https://icsm-au.github.io/3d-csdm-profile-vic/_sources/vic/vic-pointnames-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-vic/_sources/vic/vic-vocabs-shacl.ttl"
+          "https://icsm-au.github.io/3d-csdm-profile-vic/_sources/vic/vic-vocabs-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-vic/_sources/vic/vic-pointnames-shacl.ttl"
         ],
         "icsm.profiles.common": [
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl"
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl"
         ],
         "icsm.csdm.features.CSD": [
-          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl",
           "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl",
-          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl"
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl",
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl"
         ],
         "icsm.csdm.datatypes.compoundName": [
           "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl"
         ],
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
         ],
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
         ],
         "icsm.csdm.features.SurveyObservations": [
           "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl"
@@ -86,37 +86,37 @@
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
         ],
         "ogc.geo.topo.features.topo-arc": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
         ]
       },
       "shaclClosures": [
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/icsm-admin-unit-type.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/icsm-angle-type.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/icsm-distance-type.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/icsm-equipment-type.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/icsm-procedure-used.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/vic-crs.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/vic-survey-purpose.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/vic-local-government-area.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/vic-locality.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/vic-county.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/vic-parish.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/vic-township.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/vic-survey-documentation-type.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/vic-annotation.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/vic-survey-type.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/vic-vhd.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/Parcels/vic-parcel-purpose.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/Parcels/vic-parcel-state.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/vic-procedure-used.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/vic-vector-purpose.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/vic-vector-quality.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyPoints/monument/vic-monument-type.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyPoints/condition/vic-condition.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyPoints/accuracy/vic-point-class.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyPoints/purpose/vic-purpose.ttl",
-        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyPoints/state/vic-state.ttl"
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/icsm-admin-unit-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/icsm-angle-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/icsm-distance-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/icsm-equipment-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/icsm-procedure-used.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/vic-crs.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/vic-survey-purpose.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/vic-local-government-area.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/vic-locality.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/vic-county.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/vic-parish.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/vic-township.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/vic-survey-documentation-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/vic-annotation.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/vic-survey-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/vic-vhd.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/Parcels/vic-parcel-purpose.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/Parcels/vic-parcel-state.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/vic-procedure-used.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/vic-vector-purpose.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/vic-vector-quality.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/monument/vic-monument-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/condition/vic-condition.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/accuracy/vic-point-class.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/purpose/vic-purpose.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/state/vic-state.ttl"
       ],
       "dependsOn": [
         "icsm.profiles.common"
@@ -135,13 +135,13 @@
       "validationPassed": false,
       "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-vic/blob/main/build/tests/profiles/vic/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://icsm-au.github.io/3d-csdm-profile-vic/build/generateddocs/markdown/profiles/vic/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://icsm-au.github.io/3d-csdm-profile-vic/build/generateddocs/json-full/profiles/vic/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://icsm-au.github.io/3d-csdm-profile-vic/build/generateddocs/markdown/profiles/vic/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
