@@ -15,8 +15,14 @@
       "itemIdentifier": "@id",
       "baseURL": "@id",
       "name": "rdfs:label",
-      "abstract": "dct:abstract",
-      "description": "dct:description",
+      "abstract": {
+        "@id": "dct:abstract",
+        "@type": "https://www.w3.org/ns/iana/media-types/text/markdown"
+      },
+      "description": {
+        "@id": "dct:description",
+        "@type": "https://www.w3.org/ns/iana/media-types/text/markdown"
+      },
       "status": {
         "@id": "bblocks:status",
         "@type": "@id",
@@ -106,12 +112,12 @@
   "name": "Building Blocks - Victoria Implementation Profile for 3D CSDM",
   "abstract": "This repository contains the Victoria profile of the [Cadastral Survey Data Model Exchange Specification](https://icsm-au.github.io/3d-csdm-common/), \nextending the  [common ICSM profile](https://icsm-au.github.io/3d-csdm-profile-icsm/).\n \n",
   "description": "\nThe encoding specification and all profiles are compatible with the [OGC API Features](https://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-main.html) data exchange specification, and can thus be implemented by any standards compliant software capable of handling nested object sub-schemas and control of codelist in content.\n\nProfiles are defined in a consistent, machine-readable and validatable way using the [OGC Building Blocks methodology](https://ogcincubator.github.io/bblocks-docs/).\n",
-  "modified": "2024-12-09T00:55:05.020510",
+  "modified": "2025-06-06T01:03:28.388630",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"4f836104f60184d3a6e2f2272208584d6cae081d",
-      "shortCommitId": "\"4f8361",
-      "date": "2024-11-28T20:01:31+00:00\""
+      "commitId": "\"fefb79b13766e7c935eb926409c3e6816b4f7593",
+      "shortCommitId": "\"fefb79",
+      "date": "2025-06-04T13:13:08+00:00\""
     }
   },
   "gitRepository": "https://github.com/icsm-au/3d-csdm-profile-vic",
@@ -167,14 +173,14 @@
         ],
         "icsm.profiles.common": [
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl"
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl"
         ],
         "icsm.csdm.features.CSD": [
-          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl",
           "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl",
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl",
           "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl"
         ],
         "icsm.csdm.datatypes.compoundName": [
@@ -238,19 +244,17 @@
       "sourceSchema": "https://icsm-au.github.io/3d-csdm-profile-vic/_sources/vic/schema.json",
       "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-vic/_sources/vic/context.jsonld",
       "sourceFiles": "https://icsm-au.github.io/3d-csdm-profile-vic/_sources/vic/",
-      "rdfData": [
-        "https://icsm-au.github.io/3d-csdm-profile-vic/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": false,
       "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-vic/blob/main/build/tests/profiles/vic/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://icsm-au.github.io/3d-csdm-profile-vic/build/generateddocs/json-full/profiles/vic/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://icsm-au.github.io/3d-csdm-profile-vic/build/generateddocs/markdown/profiles/vic/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://icsm-au.github.io/3d-csdm-profile-vic/build/generateddocs/json-full/profiles/vic/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",

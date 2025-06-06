@@ -19,31 +19,7 @@
 <http://www.example.com/features/PS-842689H> a container:CSD,
         geojson:FeatureCollection ;
     rdfs:label "PS 842689H" ;
-    dcterms:provenance [ a <http://www.example.com/features/planNumberObtained> ;
-            prov:endedAtTime "2023-05-11T12:02:20+00:00"^^xsd:dateTime ;
-            prov:generated <http://www.example.com/features/PS899845B-v1> ;
-            prov:startedAtTime "2023-05-11T12:02:02+00:00"^^xsd:dateTime ;
-            prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
-                    rdfs:label "Stef Surphs" ;
-                    prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
-                            rdfs:label "Son of a Surveyor Ltd" ] ] ],
-        [ a <http://www.example.com/features/csdReleasedforLodgement> ;
-            prov:endedAtTime "2023-06-23T13:17:59+00:00"^^xsd:dateTime ;
-            prov:generated <http://www.example.com/features/PS899845B-v7> ;
-            prov:startedAtTime "2023-06-23T13:45:18+00:00"^^xsd:dateTime ;
-            prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
-                    rdfs:label "Stef Surphs" ;
-                    prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
-                            rdfs:label "Son of a Surveyor Ltd" ] ] ],
-        [ a <http://www.example.com/features/csdLodgedWithSpear> ;
-            prov:endedAtTime "2023-06-09T14:40:02+00:00"^^xsd:dateTime ;
-            prov:generated <http://www.example.com/features/PS899845B-v5> ;
-            prov:startedAtTime "2023-06-09T14:36:22+00:00"^^xsd:dateTime ;
-            prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
-                    rdfs:label "Stef Surphs" ;
-                    prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
-                            rdfs:label "Son of a Surveyor Ltd" ] ] ],
-        [ a <http://www.example.com/features/csdExamination> ;
+    dcterms:provenance [ a <http://www.example.com/features/csdExamination> ;
             prov:endedAtTime "2023-07-12T08:55:01+00:00"^^xsd:dateTime ;
             prov:generated <http://www.example.com/features/PS899845B-v9> ;
             prov:startedAtTime "2023-06-28T16:49:05+00:00"^^xsd:dateTime ;
@@ -59,10 +35,41 @@
                     rdfs:label "Stef Surphs" ;
                     prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
                             rdfs:label "Son of a Surveyor Ltd" ] ] ],
+        [ a <http://www.example.com/features/csdLodged> ;
+            prov:endedAtTime "2023-06-28T16:49:05+00:00"^^xsd:dateTime ;
+            prov:generated <http://www.example.com/features/PS899845B-v8> ;
+            prov:startedAtTime "2023-06-23T13:17:59+00:00"^^xsd:dateTime ;
+            prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
+                    rdfs:label "Len E. Beagle" ;
+                    prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
+                            rdfs:label "Conveyancing Calamities Ltd." ] ] ],
         [ a <http://www.example.com/features/csdAmendments> ;
             prov:endedAtTime "2023-07-21T13:07:33+00:00"^^xsd:dateTime ;
             prov:generated <http://www.example.com/features/PS899845B-v10> ;
             prov:startedAtTime "2023-07-12T08:55:01+00:00"^^xsd:dateTime ;
+            prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
+                    rdfs:label "Stef Surphs" ;
+                    prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
+                            rdfs:label "Son of a Surveyor Ltd" ] ] ],
+        [ a <http://www.example.com/features/csdRegistered> ;
+            prov:generated <http://www.example.com/features/PS899845B-v11> ;
+            prov:startedAtTime "2023-07-21T13:07:33+00:00"^^xsd:dateTime ;
+            prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
+                    rdfs:label "Examiner Trudeau" ;
+                    prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
+                            rdfs:label "Land Use Victoria" ] ] ],
+        [ a <http://www.example.com/features/fieldSurvey> ;
+            prov:endedAtTime "2023-06-08T16:05:20+00:00"^^xsd:dateTime ;
+            prov:generated <http://www.example.com/features/PS899845B-v2> ;
+            prov:startedAtTime "2023-04-20T09:03:22+00:00"^^xsd:dateTime ;
+            prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
+                    rdfs:label "Stef Surphs" ;
+                    prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
+                            rdfs:label "Son of a Surveyor Ltd" ] ] ],
+        [ a <http://www.example.com/features/csdReleasedforLodgement> ;
+            prov:endedAtTime "2023-06-23T13:17:59+00:00"^^xsd:dateTime ;
+            prov:generated <http://www.example.com/features/PS899845B-v7> ;
+            prov:startedAtTime "2023-06-23T13:45:18+00:00"^^xsd:dateTime ;
             prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
                     rdfs:label "Stef Surphs" ;
                     prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
@@ -75,22 +82,22 @@
                     rdfs:label "Alice E. Plains" ;
                     prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
                             rdfs:label "City of Bayside" ] ] ],
-        [ a <http://www.example.com/features/fieldSurvey> ;
-            prov:endedAtTime "2023-06-08T16:05:20+00:00"^^xsd:dateTime ;
-            prov:generated <http://www.example.com/features/PS899845B-v2> ;
-            prov:startedAtTime "2023-04-20T09:03:22+00:00"^^xsd:dateTime ;
+        [ a <http://www.example.com/features/planNumberObtained> ;
+            prov:endedAtTime "2023-05-11T12:02:20+00:00"^^xsd:dateTime ;
+            prov:generated <http://www.example.com/features/PS899845B-v1> ;
+            prov:startedAtTime "2023-05-11T12:02:02+00:00"^^xsd:dateTime ;
             prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
                     rdfs:label "Stef Surphs" ;
                     prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
                             rdfs:label "Son of a Surveyor Ltd" ] ] ],
-        [ a <http://www.example.com/features/csdLodged> ;
-            prov:endedAtTime "2023-06-28T16:49:05+00:00"^^xsd:dateTime ;
-            prov:generated <http://www.example.com/features/PS899845B-v8> ;
-            prov:startedAtTime "2023-06-23T13:17:59+00:00"^^xsd:dateTime ;
+        [ a <http://www.example.com/features/csdLodgedWithSpear> ;
+            prov:endedAtTime "2023-06-09T14:40:02+00:00"^^xsd:dateTime ;
+            prov:generated <http://www.example.com/features/PS899845B-v5> ;
+            prov:startedAtTime "2023-06-09T14:36:22+00:00"^^xsd:dateTime ;
             prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
-                    rdfs:label "Len E. Beagle" ;
+                    rdfs:label "Stef Surphs" ;
                     prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
-                            rdfs:label "Conveyancing Calamities Ltd." ] ] ],
+                            rdfs:label "Son of a Surveyor Ltd" ] ] ],
         [ a <http://www.example.com/features/certifiedDate> ;
             prov:endedAtTime "2023-06-09T14:15:53+00:00"^^xsd:dateTime ;
             prov:generated <http://www.example.com/features/PS899845B-v3> ;
@@ -98,24 +105,17 @@
             prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
                     rdfs:label "Stef Surphs" ;
                     prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
-                            rdfs:label "Son of a Surveyor Ltd" ] ] ],
-        [ a <http://www.example.com/features/csdRegistered> ;
-            prov:generated <http://www.example.com/features/PS899845B-v11> ;
-            prov:startedAtTime "2023-07-21T13:07:33+00:00"^^xsd:dateTime ;
-            prov:wasAssociatedWith [ a <http://www.example.com/features/person> ;
-                    rdfs:label "Examiner Trudeau" ;
-                    prov:actedOnBehalfOf [ a <http://www.example.com/features/Organisation> ;
-                            rdfs:label "Land Use Victoria" ] ] ] ;
+                            rdfs:label "Son of a Surveyor Ltd" ] ] ] ;
     dcterms:time [ time:hasTime "2020-11-27"^^xsd:date ] ;
     container:adminUnit [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
+            prof:hasRole icsm-admin-unit-type:localGovernmentArea ;
+            oa:hasTarget vic-local-government-area:328 ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
             prof:hasRole icsm-admin-unit-type:parish ;
             oa:hasTarget vic-parish:2872 ],
         [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
             prof:hasRole icsm-admin-unit-type:county ;
-            oa:hasTarget vic-county:1025 ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
-            prof:hasRole icsm-admin-unit-type:localGovernmentArea ;
-            oa:hasTarget vic-local-government-area:328 ] ;
+            oa:hasTarget vic-county:1025 ] ;
     container:bearingRotation 0e+00 ;
     container:horizontalCRS epsg:7855 ;
     container:purpose vic-survey-purpose:22-subdivision ;

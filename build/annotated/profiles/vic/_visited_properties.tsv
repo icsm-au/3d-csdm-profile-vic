@@ -203,6 +203,7 @@ path	@id
 /points/features/properties/has_provenance/atLocation	http://www.w3.org/ns/prov#atLocation
 /points/features/properties/has_provenance/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
 /points/features/properties/has_provenance/qualifiedGeneration	http://www.w3.org/ns/prov#qualifiedGeneration
+/points/features/properties/has_provenance/qualifiedGeneration/type	
 /points/features/properties/has_provenance/qualifiedInvalidation	http://www.w3.org/ns/prov#qualifiedInvalidation
 /points/features/properties/has_provenance/qualifiedInvalidation/type	
 /points/features/properties/has_provenance/qualifiedDerivation	http://www.w3.org/ns/prov#qualifiedDerivation

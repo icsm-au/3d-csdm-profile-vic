@@ -39,11 +39,11 @@
             prof:hasRole icsm-admin-unit-type:localGovernmentArea ;
             oa:hasTarget vic-local-government-area:328 ],
         [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
-            prof:hasRole icsm-admin-unit-type:county ;
-            oa:hasTarget vic-county:1025 ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
             prof:hasRole icsm-admin-unit-type:parish ;
-            oa:hasTarget vic-parish:2872 ] ;
+            oa:hasTarget vic-parish:2872 ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
+            prof:hasRole icsm-admin-unit-type:county ;
+            oa:hasTarget vic-county:1025 ] ;
     container:bearingRotation 0e+00 ;
     container:horizontalCRS epsg:7855 ;
     container:observedVectors <https://www.vic-example.com/features/observedVectors> ;
@@ -115,15 +115,15 @@
 <vectorobservation:theodolite+edm> a sosa:ObservationCollection,
         geojson:FeatureCollection ;
     sosa:hasMember [ a geojson:Feature ;
-            sosa:hasFeatureOfInterest <https://www.vic-example.com/features/OBS-001> ;
-            sosa:hasResult [ surv:distance 3.23e+00 ] ;
-            sosa:resultTime "2020-11-27T00:00:00" ;
-            ns2:angleType icsm-angle-type:bearing ;
-            ns2:distanceType icsm-distance-type:horizontal ],
-        [ a geojson:Feature ;
             sosa:hasFeatureOfInterest <https://www.vic-example.com/features/OBS-343> ;
             sosa:hasResult [ surv:distance 5.7028e+01 ] ;
             sosa:resultTime "2020-11-27T00:00:00Z" ;
+            ns2:angleType icsm-angle-type:bearing ;
+            ns2:distanceType icsm-distance-type:horizontal ],
+        [ a geojson:Feature ;
+            sosa:hasFeatureOfInterest <https://www.vic-example.com/features/OBS-001> ;
+            sosa:hasResult [ surv:distance 3.23e+00 ] ;
+            sosa:resultTime "2020-11-27T00:00:00" ;
             ns2:angleType icsm-angle-type:bearing ;
             ns2:distanceType icsm-distance-type:horizontal ] ;
     sosa:madeBySensor [ a icsm-equipment-type:t-edm ] ;
@@ -177,14 +177,14 @@
 <https://www.vic-example.com/features/CGPNT-126> a surv:CadastralMark,
         geojson:Feature ;
     rdfs:label [ rdfs:label "ORM Pipe FD (PS649028H)" ;
-            dcterms:hasPart [ rdfs:label "FD" ;
+            dcterms:hasPart [ rdfs:label "Pipe" ;
+                    commonpatterns:namePartType "MarkIdentifier" ],
+                [ rdfs:label "FD" ;
                     commonpatterns:namePartType "MarkFound" ],
                 [ rdfs:label "ORM" ;
                     commonpatterns:namePartType "MarkType" ],
                 [ rdfs:label "PS649028H" ;
-                    commonpatterns:namePartType "planIdentifier" ],
-                [ rdfs:label "Pipe" ;
-                    commonpatterns:namePartType "MarkIdentifier" ] ] ;
+                    commonpatterns:namePartType "planIdentifier" ] ] ;
     dcterms:spatial [ a geojson:Point ;
             geojson:coordinates ( 3.55557e+05 5.966566e+06 ) ] ;
     rdfs:comment "L" ;
