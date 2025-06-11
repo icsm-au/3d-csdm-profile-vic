@@ -1,5 +1,5 @@
 Validation report for icsm.profiles.vic - Victoria Cadastral Survey Data Exchange Profile
-Generated 2025-06-06T01:03:50.315087+00:00
+Generated 2025-06-11T01:38:22.996864+00:00
 === Files ===
 Using surveypoints (example_2_1) from examples
 JSON-LD context is present - uplifting
@@ -17,8 +17,8 @@ Validation result for _sources/vic/vic-pointnames-shacl.ttl:
   Conforms: True
   
 Focus nodes for _sources/vic/vic-pointnames-shacl.ttl:
- - Shape vicp:testLabelPartsPresent: *none*
  - Shape vicp:testTopoFeaturesPresent: *none*
+ - Shape vicp:testLabelPartsPresent: *none*
 
 === End SHACL ===
 
